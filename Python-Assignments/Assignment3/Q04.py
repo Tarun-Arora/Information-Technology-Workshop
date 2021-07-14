@@ -1,0 +1,6 @@
+file=open('test.txt','r')
+n=max(min(4,int(input('Enter the value of \'n\' you want lines upto: '))),0)
+print(f'Reading last {n} lines: -')
+content=file.readlines()
+print(*content[(4-n):],sep='')
+file.close()
